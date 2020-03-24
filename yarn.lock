@@ -42,6 +42,26 @@
     webpack-dev-server "^3.7.2"
     yargs-parser "^14.0.0"
 
+"@alib/build-scripts@^0.1.18":
+  version "0.1.18"
+  resolved "https://registry.yarnpkg.com/@alib/build-scripts/-/build-scripts-0.1.18.tgz#42812724067eb2885a5e140c245a5446307d7cac"
+  integrity sha512-dDerG8ybgwmUGmhmOu9xQgi4GvQfIZ+9rC/w3/q+iBAIDj/J4fOqVdjw/vcuSW9jxMIZJHOughNjLa2/FlG+/g==
+  dependencies:
+    address "^1.1.0"
+    camelcase "^5.3.1"
+    chalk "^2.4.1"
+    commander "^2.19.0"
+    deepmerge "^4.0.0"
+    detect-port "^1.3.0"
+    fs-extra "^8.1.0"
+    jest "^24.9.0"
+    lodash "^4.17.15"
+    npmlog "^4.1.2"
+    react-dev-utils "^9.0.4"
+    webpack "^4.27.1"
+    webpack-dev-server "^3.7.2"
+    yargs-parser "^14.0.0"
+
 "@alifd/fusion-collector@^1.2.5":
   version "1.2.5"
   resolved "https://registry.yarnpkg.com/@alifd/fusion-collector/-/fusion-collector-1.2.5.tgz#7684dde8e7193b0df313671e285f33f26e0eae67"
@@ -2424,6 +2444,13 @@
   version "8.0.1"
   resolved "https://registry.npm.alibaba-inc.com/@types/fs-extra/download/@types/fs-extra-8.0.1.tgz#a2378d6e7e8afea1564e44aafa2e207dadf77686"
   integrity sha1-ojeNbn6K/qFWTkSq+i4gfa33doY=
+  dependencies:
+    "@types/node" "*"
+
+"@types/fs-extra@^8.1.0":
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/@types/fs-extra/-/fs-extra-8.1.0.tgz#1114834b53c3914806cd03b3304b37b3bd221a4d"
+  integrity sha512-UoOfVEzAUpeSPmjm7h1uk5MH6KZma2z2O7a75onTGjnNvAvMVrPzPL/vBbT65iIGHWj6rokwfmYcmxmlSf2uwg==
   dependencies:
     "@types/node" "*"
 
@@ -11382,7 +11409,7 @@ realpath-native@^1.1.0:
   dependencies:
     util.promisify "^1.0.0"
 
-recursive-readdir@2.2.2, recursive-readdir@^2.2.2:
+recursive-readdir@2.2.2:
   version "2.2.2"
   resolved "https://registry.npmjs.org/recursive-readdir/-/recursive-readdir-2.2.2.tgz#9946fb3274e1628de6e36b2f6714953b4845094f"
   integrity sha512-nRCcW9Sj7NuZwa2XvH9co8NPeXUBhZP7CRKJtU+cS6PW9FpCIFoI5ib0NT1ZrbNuPoRy0ylyCaUL8Gih4LSyFg==
@@ -13798,11 +13825,6 @@ webpack-log@^2.0.0:
   dependencies:
     ansi-colors "^3.0.0"
     uuid "^3.3.2"
-
-webpack-node-externals@^1.7.2:
-  version "1.7.2"
-  resolved "https://registry.npmjs.org/webpack-node-externals/-/webpack-node-externals-1.7.2.tgz#6e1ee79ac67c070402ba700ef033a9b8d52ac4e3"
-  integrity sha512-ajerHZ+BJKeCLviLUUmnyd5B4RavLF76uv3cs6KNuO8W+HuQaEs0y0L7o40NQxdPy5w0pcv8Ew7yPUAQG0UdCg==
 
 webpack-simple-progress-plugin@0.0.4:
   version "0.0.4"
