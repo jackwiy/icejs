@@ -1,7 +1,5 @@
 <script>
   import { useState, useCallback } from 'react';
-  import styles from './style.css';
-  import './style.scss';
 
   export default function (props) {
    const [foo, setFoo] = useState(true);
@@ -10,7 +8,6 @@
    }, [foo]);
 
    return {
-     styles,
      color: 'yellow',
      handleClick,
      foo,
@@ -33,8 +30,7 @@
    }
  </style>
 
- <import Button="Button" from="@alifd/next" />
- <div className=":container container" style={styles.container}>
+ <div className=":container container">
    <div>
      <span>插值：</span>
      <span>{ "插值" }</span>
@@ -73,15 +69,15 @@
      <span data-id={ foo ? color : 'undefined' }>
        计算
      </span>
-     {/* <Button type="primary" onClick={function() {
+     {/* <button type="primary" onClick={function() {
        alert(1);
      }}>
        点击
-     </Button> */}
+     </button> */}
    </div>
    <div>
-     <Button type="primary" onClick={handleClick}>
+     <button type="primary" onClick={handleClick}>
        切换
-     </Button>
+     </button>
    </div>
  </div>

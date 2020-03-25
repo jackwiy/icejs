@@ -7,6 +7,6 @@ export default function() {
 
 </style>
 
-<import default="Simple" from="@/components/Simple.rml" />
+<import default="Simple" from="@/components/Simple/index.rml" />
 
 <Simple />
