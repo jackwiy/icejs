@@ -1,4 +1,12 @@
-export default ({ context, onGetWebpackConfig, log, onHook }, options) => {
-  // 第一项参数为插件 API 提供的能力
-  // options：插件自定义参数
-};
+module.exports = ({ onGetWebpackConfig }) => {
+  onGetWebpackConfig((config) => {
+    config.module
+      .rule('compile')
+      .test(/\.rml$/i)
+      .use('rml')
+      .loader('@reactml/loader')
+      .options({
+        renderer: 'react',
+      });
+  });
+}
