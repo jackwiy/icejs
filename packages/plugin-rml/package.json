@@ -1,5 +1,5 @@
 {
-  "name": "build-plugin-ice-rml",
+  "name": "build-plugin-rml",
   "version": "1.1.2",
   "description": "RML loader for icejs",
   "author": "ice-admin@alibaba-inc.com",
