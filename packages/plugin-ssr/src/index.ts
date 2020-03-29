@@ -38,6 +38,10 @@ const plugin = async (api): Promise<void> => {
 
     config.name('ssr');
 
+    config.module
+      .rule('polyfill')
+      .include.add(ssrEntry);
+
     config
       .plugin('DefinePlugin')
       .tap(([args]) => [{ ...args, 'process.env.__IS_SERVER__': true }]);
